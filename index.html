@@ -7,7 +7,12 @@
 	<link rel="icon" href="img/branding/favicon-round.png" type="image/x-icon" />
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 
-
+	<script>
+		function showmess(){
+			$(".message").addClass("show");
+			setTimeout(function(){ $(".message").removeClass("show"); }, 3000);
+		}		
+	</script>
 </head>
 <body>
 
@@ -64,11 +69,6 @@
 	<!-- ## scripts ## -->
 	<script type="text/javascript">	
 		$('#hammenu').hover( function(){$(this).toggleClass('scale-up-hor-right');} );
-
-		function showmess(){
-			$(".message").addClass("show");
-			setTimeout(function(){ $(".message").removeClass("show"); }, 2000);
-		}
 	</script>
 
 </body>
