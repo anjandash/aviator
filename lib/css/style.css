@@ -333,6 +333,7 @@ body{
 
 	margin: 0px auto;
 	padding-bottom: 10px;
+	padding-right: 10px;
 
 	opacity: 0.5;
 	text-align: right;
@@ -384,6 +385,10 @@ body{
 		height: 240px;
 		display: block;
 		margin: 120px auto 50px;
+	}
+
+	#footer{
+		width: 80%;
 	}
 
 	/* also make header changes */
