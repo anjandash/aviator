@@ -42,14 +42,22 @@ body{
 }
 
 .himg{
+	height: 104px;
+	width: 160px;
+	opacity: 0.5;
+
+	background: url(../../img/branding/logo-trans.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	border: 0px solid red; 
+
 	display: inline-block;
 	vertical-align: top;
 }
 
 #header-img{
-	height: 100px;
-	width: auto;
-	opacity: 0.5;
+
 }
 
 #separator{
@@ -61,6 +69,11 @@ body{
 
 .menu{
 	display: inline-block;
+	vertical-align: top;
+}
+
+.mobile-menu{
+	display: none;
 	vertical-align: top;
 }
 
@@ -80,7 +93,27 @@ body{
     -webkit-transition: opacity 0.3s ease-in-out;	
 }
 
+.menulistm{
+	color: whitesmoke;
+	display: inline-block;
+
+	font-family: montserrat;
+	font-weight: 300;
+	font-size: 14px;
+
+	margin: 38px 8px;
+	opacity: 0.5;
+
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;	
+}
+
 .menulist:hover{
+	opacity: 0.8;
+}
+
+.menulistm:hover{
 	opacity: 0.8;
 }
 
@@ -276,9 +309,9 @@ body{
 	opacity: 0.9;
 	cursor: pointer;
 
-	transition: all 0.7s ease-in-out;
-	-moz-transition: all 0.7s ease-in-out;
-	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 }
 
 .outline-button:hover{
@@ -349,6 +382,10 @@ body{
 		display: block;
 		margin: 100px auto 0px;
 	}
+
+	.message{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 650px){
@@ -391,6 +428,108 @@ body{
 		width: 80%;
 	}
 
-	/* also make header changes */
-	/* make responsive header */
+	.menu{
+		display: none;
+	}
+
+	.mobile-menu{
+		display: inline-block;
+		vertical-align: top;
+
+		border: 0px solid red;
+	}
+
+	.himg{
+		height: 104px;
+		width: 90px;
+		opacity: 0.5;
+
+		background: url(../../img/branding/logo-solo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		border: 0px solid red; 
+
+		display: inline-block;
+		vertical-align: top;			
+	}
+
+	.home{
+		height: 23px;
+		width: 23px;
+
+		background: url(../../img/assets/icons/home.png);
+		background-size: cover;
+	}
+
+	.intro{
+		height: 23px;
+		width: 23px;
+
+		background: url(../../img/assets/icons/intro.png);
+		background-size: cover;
+	}
+
+	.features{
+		height: 23px;
+		width: 23px;
+
+		background: url(../../img/assets/icons/features.png);
+		background-size: cover;
+	}
+
+	.crew{
+		height: 23px;
+		width: 23px;
+
+		background: url(../../img/assets/icons/crew.png);
+		background-size: cover;
+	}
+
+	.menulistm{
+		margin: 40px 12px;
+	}	
+
+	#hammenu{
+	width: 30px;
+	height: 30px;
+
+	display: inline-block;
+	vertical-align: top;
+
+	border: 0px solid red;
+	background: url(../../img/assets/menu.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	margin: 38px 40px 0px 10px;
+	float: right;
+	cursor: pointer;
+	}
+
+
+	/* also make message changes */
+	/* make new responsive message alert */
+
+}
+
+@media only screen and (max-width: 450px){
+		.home, .intro, .features, .crew{
+			height: 20px;
+			width: 20px;
+		}
+
+		.mobile-menu{
+			padding-top: 3px;
+		}
+
+		.menulistm{
+			margin: 40px 8px;
+		}
+
+		#hammenu{
+			width: 25px;
+			height: 30px;
+			margin: 40px 20px 0px 10px;
+		}
 }
