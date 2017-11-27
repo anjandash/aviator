@@ -23,9 +23,10 @@ body{
 	-ms-user-select: none;  
 }
 
-.lander{
-	height: 670px;
+.lander{	
+	height: auto;
 	width: 100%;
+	min-width: 330px;
 
 	background: linear-gradient(120deg, 
 		rgba(31,24,94, 0.8) 10%, 	
@@ -143,7 +144,18 @@ body{
 
 #basebox{
 	width: 100%; 
-	height: 300px;
+	height: auto;
+
+	min-height: 510px;
+	/*overflow-y: auto;
+	overflow-x: clip;*/
+
+	border: 0px solid gold;
+	text-align: center;
+
+	box-sizing: border-box;
+	padding: 50px 100px 50px;
+	
 }
 
 #textbox{
@@ -152,9 +164,14 @@ body{
 
 	max-height: 300px;
 	border: 0px solid green;
+	margin: 50px 30px 0px 0px;
+	
 
-	margin: 100px 0px 0px 100px;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+
+	text-align: left;
+
 }
 
 #heading{
@@ -181,24 +198,63 @@ body{
 }
 
 #imagebox{
-	height: 300px;
-	width: 400px;
+	height: 400px;
+	width: 500px;
 
 	border: 0px solid red;
-	background: url(../../img/resources/disk-trans.png);
+	background: url(../../img/resources/all.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	margin: 100px 100px 0px 0px; 
-	float: right;
+	margin: 20px 0px 0px 0px; 
+	
+
+	display: inline-block;
+	vertical-align: top;
 }
+
+/*#img-cassette{
+	height: 150px;
+	width: 250px;
+	border: 0px solid white;
+	background: url(../../img/resources/cassette-trans.png);
+	background-size: cover;
+
+	position: relative;
+	margin: 150px 0px 0px -30px;
+	z-index: 0;
+}
+
+#img-cd{
+	height: 200px;
+	width: 220px;
+	border: 0px solid blue;
+	background: url(../../img/resources/cd-trans.png);
+	background-size: cover;
+	position: relative;
+	margin: -310px 0px 0px -35px;
+	z-index: 1;
+}
+
+#img-card{
+	height: 80px;
+	width: 100px;
+	border: 0px solid pink;
+	background: url(../../img/resources/card-trans.png);
+	background-size: cover;
+	position: relative;
+	margin: -215px 0px 0px 100px;	
+	z-index: 1;
+}*/
 
 #buttonbox{
 	height: 80px; 
 	width: 400px; 
 
 	border: 0px solid red; 
-	margin: 0px 100px;
+	margin: 20px 0px;
+	float: left;
+
 }
 
 .outline-button{
@@ -262,4 +318,74 @@ body{
 .show{
 	width: 320px;
 	opacity: 0.8;	
+}
+
+#footer{
+	height: 50px;
+	width: 95%;
+
+	color: whitesmoke;
+	background: transparent;
+
+	font-size: 14px;
+	line-height: 50px;
+	border-top: 1px solid rgba(255,255,255,0.2);
+
+	margin: 0px auto;
+	padding-bottom: 10px;
+
+	opacity: 0.5;
+	text-align: right;
+}
+
+@media only screen and (max-width: 1000px){
+	#textbox{
+		display: block;
+		margin: 50px auto;
+	}
+
+	#imagebox{
+		display: block;
+		margin: 100px auto 0px;
+	}
+}
+
+@media only screen and (max-width: 650px){
+	#basebox{
+		padding: 20px 20px 0px;
+		text-align: center;
+	}
+
+	#textbox{
+		width: 300px;
+		height: auto;
+		display: block;
+		margin: 50px auto;		
+	}
+
+	#heading{
+		width: 300px;
+		font-size: 22px;
+	}
+
+	#paragraph{
+		width: 300px;
+		height: auto;
+		font-size: 14px;
+	}
+
+	#buttonbox{
+		width: 300px;
+		margin-bottom: 30px;
+	}
+
+	#imagebox{
+		width: 300px;
+		height: 240px;
+		display: block;
+		margin: 120px auto 50px;
+	}
+
+	/* also make header changes */
+	/* make responsive header */
 }
