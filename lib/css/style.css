@@ -384,8 +384,15 @@ body{
 	}
 
 	.message{
-		display: none;
+		position: absolute;
+		top: 130px;
+		right: 0;
+		left: 0;
+
+		margin-left: auto;
+		margin-right: auto;
 	}
+
 }
 
 @media only screen and (max-width: 650px){
@@ -507,9 +514,9 @@ body{
 	cursor: pointer;
 	}
 
-
-	/* also make message changes */
-	/* make new responsive message alert */
+	.show{
+		width: 300px;
+	}
 
 }
 
@@ -532,4 +539,8 @@ body{
 			height: 30px;
 			margin: 40px 20px 0px 10px;
 		}
+
+		.show{
+			width: 280px;
+		}		
 }
