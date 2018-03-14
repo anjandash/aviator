@@ -8,7 +8,7 @@
 
 
 body{
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 }
 
@@ -83,7 +83,7 @@ body{
 	color: whitesmoke;
 	display: inline-block;
 
-	font-family: montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 
@@ -99,7 +99,7 @@ body{
 	color: whitesmoke;
 	display: inline-block;
 
-	font-family: montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 
